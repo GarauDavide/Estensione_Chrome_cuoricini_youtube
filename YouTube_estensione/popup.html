@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            AutoCuori
+        </title>
+        <style>
+            body{
+                min-width: 350px;
+                min-height: 160px;
+                text-align: center;
+                padding: 25px;
+                background-color:rgb(228, 227, 163);
+            }
+            #log_attivita{
+                color:red;
+                font-weight: bold;
+            }
+            #avvia_cuori, #avvia_like{
+                color:blue;
+                font-weight: bold;
+                margin-top: 10px;
+                width: 200px;
+            }
+            #log{
+                color:rgb(51, 172, 4);
+                font-weight: bold;
+            }
+            #titolo_select_dilay{
+                color:blue;
+                font-weight: bold;
+            }
+        </style>
+        <script src="jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <p id="log_attivita"></p>
+        <label id="titolo_select_dilay">Setta dilay click   </label>
+        <select id="selezione_dilay">
+            <option value="0">0</option>
+            <option value="0.5" selected="selected">0.5</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        <input type="submit" id="avvia_cuori" value="Avvia Script Cuori">
+        <br>
+        <input type="submit" id="avvia_like" value="Avvia Script Like">
+        <p id="log"></p>
+
+        <script src="popup.js"></script>
+        <script src="content.js"></script>
+        <script src="eventPage.js"></script>
+    </body>
+</html>

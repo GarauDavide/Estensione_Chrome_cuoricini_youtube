@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube_like_cuori",
+    "version": "1.0",
+    "icons":{
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "page_action":{
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "AutoCuori"
+    },
+    "background":{
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content.js", "jquery-3.4.1.min.js"]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "https://www.youtube.com/*"
+    ]
+}
